@@ -1,0 +1,31 @@
+{
+  "name": "v-toaster",
+  "version": "0.0.0",
+  "description": "Vue toaster Plugin",
+  "author": "Marcos Paliari <marcos@paliari.com.br>",
+  "main": "dist/v-toaster.js",
+  "style": "dist/v-toaster.css",
+  "scripts": {
+    "build": "bin/build",
+    "dist": "bin/dist",
+    "release": "rm -rf dist && yarn run build && yarn run dist"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "vwp": ">=0.0.38"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paliari/v-toaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paliari/v-toaster/issues"
+  },
+  "homepage": "https://github.com/paliari/v-toaster#readme",
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  }
+}
