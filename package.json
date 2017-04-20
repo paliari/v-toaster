@@ -1,10 +1,13 @@
 {
   "name": "v-toaster",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue.js component",
   "author": "Marcos Paliari <marcos@paliari.com.br>",
   "main": "dist/v-toaster.js",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
   "scripts": {
     "dist": "vue build ./src/v-toaster.js --config ./build.config.js --dist ./dist/ --prod --lib",
     "dist:demo": "vue build ./src/demo.vue --config ./build.config.js --dist ./demo/ --prod",
@@ -27,9 +30,5 @@
   "bugs": {
     "url": "https://github.com/paliari/v-toaster/issues"
   },
-  "homepage": "https://github.com/paliari/v-toaster#readme",
-  "license": {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  }
+  "homepage": "https://github.com/paliari/v-toaster#readme"
 }
