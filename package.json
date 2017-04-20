@@ -1,21 +1,25 @@
 {
   "name": "v-toaster",
-  "version": "0.0.0",
-  "description": "Vue toaster Plugin",
+  "version": "0.0.1",
+  "description": "A Vue.js component",
   "author": "Marcos Paliari <marcos@paliari.com.br>",
   "main": "dist/v-toaster.js",
-  "style": "dist/v-toaster.css",
+  "license": "MIT",
   "scripts": {
-    "build": "bin/build",
-    "dist": "bin/dist",
-    "release": "rm -rf dist && yarn run build && yarn run dist"
+    "dist": "vue build ./src/v-toaster.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "dist:demo": "vue build ./src/demo.vue --config ./build.config.js --dist ./demo/ --prod",
+    "build": "npm run dist -- --disable-compress",
+    "start": "npm run dev",
+    "dev": "vue build ./src/demo.vue --config ./build.config.js",
+    "demo:open": "open 'http://localhost:3000/'; serve ./demo/"
   },
-  "dependencies": {
-  },
-  "devDependencies": {},
-  "peerDependencies": {
-    "vwp": ">=0.0.38"
-  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "vue",
+    "component"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paliari/v-toaster.git"
