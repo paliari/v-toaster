@@ -3,8 +3,7 @@
   transition-group(name='v-toast')
     .v-toast(:class="{[t.theme]: t.theme}", v-for='t in items', :key='t.key')
       a.v-toast-btn-clear(@click='remove(t)')
-      | {{t.content}}
-  a.btn(@click="add('Lorem ipsum dolor sit amet.'), 'success'")
+      | {{t.message}}
 </template>
 
 <script>
@@ -17,16 +16,17 @@ export default {
     }
   },
   methods: {
-    success (message, timeout) { this.add(message, 'v-toast-success', timeout) },
-    info (message, timeout) { this.add(message, 'v-toast-info', timeout) },
-    warning (message, timeout) { this.add(message, 'v-toast-warning', timeout) },
-    error (message, timeout) { this.add(message, 'v-toast-error', timeout) },
-    add (content, theme, timeout) {
+    success (message, {timeout}) { this.add(message, {theme: 'v-toast-success', timeout}) },
+    info (message, {timeout}) { this.add(message, {theme: 'v-toast-info', timeout}) },
+    warning (message, {timeout}) { this.add(message, {theme: 'v-toast-warning', timeout}) },
+    error (message, {timeout}) { this.add(message, {theme: 'v-toast-error', timeout}) },
+
+    add (message, {theme, timeout}) {
       if (!this.$parent) {
         this.$mount()
         document.body.appendChild(this.$el)
       }
-      let item = {content, theme, key: `${Date.now()}-${Math.random()}`}
+      let item = {message, theme, key: `${Date.now()}-${Math.random()}`}
       this.items.push(item)
       setTimeout( () => this.remove(item), timeout || this.timeout)
     },
@@ -69,6 +69,7 @@ toast-variant(color)
     width 100%
     toast-variant(dark-color)
     &.v-toast-enter, &.v-toast-leave-to
+      -webkit-transform translate(100%)
       transform translate(100%)
     &.v-toast-success
       toast-variant(#32b643)
