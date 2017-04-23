@@ -1,6 +1,6 @@
 {
   "name": "v-toaster",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vue.js component",
   "author": "Marcos Paliari <marcos@paliari.com.br>",
   "main": "dist/v-toaster.js",
