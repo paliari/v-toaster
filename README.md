@@ -29,7 +29,7 @@ import Toaster from 'v-toaster'
 // You need a specific loader for CSS files like https://github.com/webpack/css-loader
 import 'v-toaster/dist/v-toaster.css'
 
-// timeout default 10 seconds.
+// optional set default imeout, the default is 10000 (10 seconds).
 Vue.use(Toaster, {timeout: 5000})
 ```
 
@@ -51,11 +51,14 @@ Vue.use(Toaster, {timeout: 5000})
 // ...
 this.$toaster.success('Your toaster success message.')
 // or custom timeout
-this.$toaster.success('Your toaster success message.', 8000)
+this.$toaster.success('Your toaster success message.', {timeout: 8000})
 
 this.$toaster.info('Your toaster info message.')
 this.$toaster.error('Your toaster error message.')
 this.$toaster.warning('Your toaster warning message.')
+
+// or custom add method
+this.$toaster.add('Your toaster theme message.', {theme: 'info', timeout: 10000})
 // ...
 ```
 
