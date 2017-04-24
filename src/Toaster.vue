@@ -57,7 +57,8 @@ toast-variant(color)
   right 0
   z-index 10000
   width 300px
-  padding 10px
+  padding-left 10px
+  padding-right 10px
   .v-toast
     margin-bottom 10px
     transition all .3s ease
@@ -66,7 +67,6 @@ toast-variant(color)
     color #fff
     display block
     padding 1rem
-    width 100%
     toast-variant(dark-color)
     &.v-toast-enter, &.v-toast-leave-to
       -webkit-transform translate(100%)
@@ -86,20 +86,15 @@ toast-variant(color)
       background transparent
       border 0
       color currentColor
-      height 1.6rem
-      line-height 1.6rem
-      margin .2rem -.2rem .2rem .4rem
       opacity .45
-      padding 0 .2rem
       text-decoration none
-      width 1.6rem
       float right
       cursor pointer
       &:hover
         opacity .85
       &::before
         content "\2715"
-@media (max-width: 600px)
+@media (max-width: 350px)
   .v-toaster
     width 100%
 </style>
