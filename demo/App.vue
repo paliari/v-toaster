@@ -36,6 +36,7 @@ export default {
   },
 }
 </script>
+
 <style src="./style.css"></style>
 <style lang="stylus">
 toast-variant(color)
@@ -51,7 +52,7 @@ toast-variant(color)
   select
     height 2.2em
   .btn, select
-    background-color #159957
+    background-color #454d5d
     font-size 1.5em
     padding 10px
     margin 10px
