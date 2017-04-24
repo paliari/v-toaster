@@ -16,6 +16,11 @@ Installation
 
 `npm i --save v-toaster`
 
+Demo
+----
+
+[DEMO](http://paliari.github.io/v-toaster)
+
 Usage
 -----
 
