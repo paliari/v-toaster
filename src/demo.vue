@@ -1,6 +1,8 @@
 <template lang="pug">
 div(style='text-align: center;')
   h1 Toaster
+  h2 Smart Toaster for Vue.js.
+  a.pure-button(href='https://github.com/paliari/v-toaster', target='_blank') See on Github&nbsp;
   p
     textarea(v-model='message')
   p
