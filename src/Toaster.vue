@@ -17,9 +17,9 @@ export default {
   },
   methods: {
     success (message, option = {}) { this.add(message, {theme: 'v-toast-success', timeout: option.timeout}) },
-    info (message, option = {}) { this.add(message, {theme: 'v-toast-info', timeout: option.timeout}) },
+    info    (message, option = {}) { this.add(message, {theme: 'v-toast-info',    timeout: option.timeout}) },
     warning (message, option = {}) { this.add(message, {theme: 'v-toast-warning', timeout: option.timeout}) },
-    error (message, option = {}) { this.add(message, {theme: 'v-toast-error', timeout: option.timeout}) },
+    error   (message, option = {}) { this.add(message, {theme: 'v-toast-error',   timeout: option.timeout}) },
 
     add (message, {theme, timeout}) {
       if (!this.$parent) {
