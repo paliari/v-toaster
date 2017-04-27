@@ -28,7 +28,7 @@
     "vue-toast",
     "vue-toaster",
     "v-toast",
-    "toaster-vue"
+    "toaster-vue",
     "toast-vue"
   ],
   "repository": {
