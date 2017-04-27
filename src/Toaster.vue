@@ -94,7 +94,7 @@ toast-variant(color)
         opacity .85
       &::before
         content "\2715"
-@media (max-width: 350px)
+@media (max-width: 300px)
   .v-toaster
     width 100%
 </style>
