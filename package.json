@@ -21,7 +21,15 @@
   ],
   "keywords": [
     "vue",
-    "component"
+    "component",
+    "v-toaster",
+    "toast",
+    "toaster",
+    "vue-toast",
+    "vue-toaster",
+    "v-toast",
+    "toaster-vue"
+    "toast-vue"
   ],
   "repository": {
     "type": "git",
