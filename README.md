@@ -45,7 +45,7 @@ Vue.use(Toaster, {timeout: 5000})
 <link rel="stylesheet" href="v-toaster/dist/v-toaster.css"></link>
 <script src="v-toaster/dist/v-toaster.js"></script>
 <script>
-  Vue.use(Toaster, {timeout: 5000})
+  Vue.use(VToaster, {timeout: 5000})
 </script>
 ```
 
